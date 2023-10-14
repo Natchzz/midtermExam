@@ -1,0 +1,300 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>My | Web | Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+ 
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
+  
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  
+  <!-- linking css file -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- icon -->
+  <link rel="icon" href="/images/icon.png">
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top navbarScroll navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="https://www.facebook.com/floydmark.ancheta" target="_blank">FloydMark</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                
+            </div>
+        </div>
+    </nav>
+    
+    <!-- main section -->
+    <section class="container-fluid mainSection bgimage" id="home">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 title_text">
+                <div class="title text-title">Hi, <span class="floyd">it's me Floyd</span> </div>
+                <span class="text fs-3">A</span> <span class="text fs-3 auto-type "></span>
+                <!-- <p class="description">I am a computer Engineering student
+                    and a future full stack web developer. </p> -->
+            </div>
+        </div>
+    </section>
+    
+    <!-- about section -->
+    <section class="container mt-4 pt-4 p-4 aboutsection" id="about">
+        <h1 class="text-center display-4 fw-bold">About Me</h1>     
+        <div class="row mt-4">
+            <div class="col-lg-6">
+                <img src="./images/about_profile.jpg" class="image_about rounded-circle" alt="Profile photo">
+            </div>
+            <div class="col-lg-6">
+                <p class="aboutMeParagraph fw-semibold fs-6 mt-1 pt-1 justify-content-center">Hello, <span class="text floyd">I'm Floyd Mark</span>, and I'm passionate about learning different things. With a background in computer engineering, I bring a unique blend of skills and expertise to the table. <br><br>
+                    I've always had a curiosity for coding, especially in cyber security, which has driven me to take this course in college. My journey in computer engineering has been both fulfilling and challenging, and I thrive on each subject that they teach at our university. <br><br>
+                    When I'm not working or studying, you can often find me outside playing basketball and chatting with my friends. Sometimes I also read books to gain knowledge not only in school but also in the outside world. <br><br>
+                    I believe in continuous learning and growth, which is why I'm continuously studying our technology and how to use it. As I navigate this exciting journey, I'm always eager to achieve my goals to become successful in life. Thank you for visiting my page, and I look forward to connecting with like-minded individuals, exploring new opportunities, and sharing experiences. <br><br>
+                    Beyond the world of computers and circuits, I also enjoy exploring new technologies, as they provide a much-needed balance to my academic pursuits. These activities remind me of the importance of creativity and fresh perspectives in problem-solving.<br><br>
+                    With each day, I'm not just preparing for my future as a computer engineer but also embracing the exciting present of self-discovery and growth. I'm thrilled to connect with fellow enthusiasts, share experiences, and, together, embark on this fascinating journey of continuous learning and exploration. <br><br>
+                </p>
+                <div class="fw-semibold fs-6 mt-1 text-center">Phone: +63 956 532 6627</div>
+                <div class="fw-semibold fs-6 mt-1 text-center">Email me: <span><a href="mailto:floydmark22@gmai.com">floydmark22@gmail.com</a></span></div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- skill section-->
+    <section class="container-fluid skillSection bg-black pb-4" id="skills">
+        <h1 class="text-center text-white pt-4 display-4 fw-semibold">Skills</h1>
+        <div class="row justify-content-center">
+            <div class="col-lg-3 mt-4" id="skillContainer1">
+                <div class="card skillsText">
+                    <div class="card-body">
+                        <i class="fa skillsIcons fa-gears"></i>
+                        <h4 class="card-title mt-3">Object Oriented Programming</h4>
+                        <p class="card-text mt-3">Mastery of OOP principles for creating modular and maintainable software, fostering code reusability and efficient problem-solving. <span class="learnMore">Click to learn more...</span>
+                        </p>
+                    </div>
+                </div>  
+            </div>
+            <div class="col-lg-3 mt-4" id="skillContainer2">
+                <div class="card skillsText">
+                    <div class="card-body">
+                        <i class='fas skillsIcons fa-database'></i>
+                        <h4 class="card-title mt-3">Data Structure and Algorithm </h4>
+                        <p class="card-text mt-3">Skilled in data structures and algorithms, enabling efficient problem-solving and optimized code for various applications. <span class="learnMore">Click to learn more...</span>
+                        </p>
+                    </div>
+                </div>  
+            </div>
+
+            <div class="col-lg-3 mt-4" id="skillContainer3">
+                <div class="card skillsText">
+                    <div class="card-body">
+                        <i class="fas skillsIcons fa-palette"></i>
+                        <h4 class="card-title mt-3">Website Design</h4>
+                        <p class="card-text mt-3">Proficient in website design, creating visually appealing, user-friendly interfaces that enhance the overall web experience. <span class="learnMore">Click to learn more...</span>
+                        </p>
+                    </div>
+                </div>  
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-3 mt-4" id="skillContainer4">
+                <div class="card skillsText">
+                    <div class="card-body">
+                        <i class="fas skillsIcons fa-code"></i>
+                        <h4 class="card-title mt-3">Web Development</h4>
+                        <p class="card-text mt-3">Experienced in web development, building robust and dynamic web applications using cutting-edge technologies. <span class="learnMore">Click to learn more...</span>
+                        </p>
+                    </div>
+                </div>  
+            </div>
+            <div class="col-lg-3 mt-4" id="skillContainer5">
+                <div class="card skillsText">
+                    <div class="card-body">
+                        <i class='fas skillsIcons fa-shield-alt'></i>
+                        <h4 class="card-title mt-3">Cyber Security</h4>
+                        <p class="card-text mt-3">Adept in cybersecurity practices, ensuring data protection and safeguarding against online threats. <span class="learnMore">Click to learn more...</span>
+                        </p>
+                    </div>
+                </div>  
+            </div>
+            <div class="col-lg-3 mt-4" id="skillContainer6">
+                <div class="card skillsText">
+                    <div class="card-body">
+                        <i class='fas skillsIcons fa-wrench'></i>
+                        <h4 class="card-title mt-3 ">Full Stack Web Developer</h4>
+                        <p class="card-text mt-3">Versatile full-stack web developer with expertise in both front-end and back-end development, capable of creating end-to-end web solutions. <span class="learnMore">Click to learn more...</span>
+                        </p>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </section>
+    <!-- projects section-->
+    <section class="section" id="projects">
+        <div class="container mt-3">
+            <h1 class="text-center text-black pt-4 display-4 fw-bolder">Projects</h1>
+            <div class="row">
+                <div class="col-lg-6 mt-4">
+                    <div class="card border-dark ">
+                        <img class="card-img-top" src="./images/arduino_project2.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title"> Arduino Controlled Appliance Switch</h4>
+                            <p class="card-text">The Arduino-Controlled Appliance Switch is designed to control the different home appliances: fan, blender and speaker. It is operated using a remote, and IR receiver. along with Bluetooth module HC05. It includes Python for the Graphical User Interface buttons that can be used to operate the switches.
+                                This project is a convenient home appliance control system that allows for the control of household appliances using Arduino and Python. 
+                            </p>
+                            <div class="text-center">
+                                <a href="https://drive.google.com/file/d/139MHK70V4cWF1Kx7t11w9_qyy_CwMEh-/view?usp=sharing" target="_blank" class="btn btn-primary">See project</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-4">
+                    <div class="card border-dark">
+                        <img class="card-img-top" src="./images/tplex.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">TPLEX Incident Management System</h4>
+                            <p class="card-text ">The Incident Management System for TPLEX Traffic Safety Management and Security Department is a project that aims to develop a system for managing various incidents and violations along the Tarlac-Pangasinan-La Union Expressway (TPLEX). This document will provide a detailed description of the said project. It will explain the purpose and features of the system, the interfaces of the system, what the system will do, the constraints under which it must operate. 
+                            </p>
+                            <div class="text-center">
+                                <a href="https://drive.google.com/file/d/1kxdF8FlEHy-_mLelXcDAksCwzGJbN-1C/view?usp=sharing" target="_blank" class="btn btn-primary">See project</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-lg-4 mt-4 h-100">
+                    <div class="card border-dark">
+                        <img class="card-img-top" src="./images/responsive-card.png" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Responsive Card Layout</h4>
+                            <p class="card-text">A card layout which is responsive in any type of devices. Created using html, css and javascript. </p>
+                            <div class="text-center">
+                                <a href="https://natchzz.github.io/responsive-card-layout/" class="btn btn-primary">See project</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mt-4 h-100 ">
+                    <div class="card border-dark">
+                        <img class="card-img-top" src="./images/landing-page.png" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Fcb-Portfolio</h4>
+                            <p class="card-text">My simple portfolio created using html, css and bootstrap during a bootcamp.</p>
+                            <div class="text-center">
+                                <a href="https://natchzz.github.io/fcb-portfolio/" class="btn btn-primary" target="_blank">See project</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mt-4">
+                    <div class="card border-dark">
+                        <img class="card-img-top" src="/images/quiz-game.png" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Quiz Game</h4>
+                            <p class="card-text">Simple engineering quiz game you might wanted to try. click on see project button.</p>
+                            <div class="text-center">
+                                <a href="https://natchzz.github.io/Quiz/" class="btn btn-primary" target="_blank">See project</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+    </section>
+   <!-- contact section-->
+    <section class="container-fluid mt-3 section" id="contact">
+        <h1 class="text-center text-black pt-4 display-4 fw-bolder">Contact Me</h1>
+        <div class="row mt-12 align-items-center justify-content-center">
+            <div class="col-lg-6">
+                <!-- form fields -->
+                <form class="form" method="post" onsubmit="emailSend(); reset(); return false;" >
+                    <label for="name" class="form-label ">Name:</label>
+                    <div class="mb-4 input-group">
+                        <span class="input-group-text">
+                            <i class="fa fa-user"></i>
+                        </span>
+                        <input type="text" class="form-control form-control-lg" placeholder="e.g Floyd" id="name" name="name" autocomplete="off" required>
+                    </div>
+                    <label class="form-label" for="phone">Email: </label>
+                    <div class="mb-4 input-group">
+                        <span class="input-group-text">
+                            <i class="fa fa-envelope"></i>
+                        </span>
+                        <input type="email" class="form-control " placeholder="e.g nikzcameron@gmail.com" id="email" name="email" autocomplete="off" required>
+                    </div>
+                
+                    <label for="email" class="form-label">Subject:</label>
+                    <div class="mb-4 input-group">
+                        <span class="input-group-text">
+                            <i class="fa fa-comments"></i>
+                        </span>
+                        <input type="text" class="form-control " placeholder="subject"  id="subject" name="subject" autocomplete="off" required>
+                    </div>
+                    <div class="mb-3 mt-3">
+                        <textarea class="form-control" rows="5" id="message"  name="message" placeholder="Message" autocomplete="off" required></textarea>
+                    </div>
+                    <div class="mb-4 text-center">
+                        <button type="button" class="btn btn-primary mt-3 text-center" id="btn">Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <!-- footer section-->
+    <footer class="container-fluid footer" id="footer">
+        <!-- social media icons -->
+        <div class="social-icons mt-4">
+            <p>&copy; 2023 My | Web | Portfolio. All rights reserved.</p>
+            <a href="https://www.facebook.com/floydmark.ancheta" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/plooyd.dd/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://x.com/AnchetaFlo37816?t=2lEgzOTjtY3QRNaj24Y6Qw&s=09" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://github.com/Natchzz" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+    </footer>
+    
+
+    <!-- load javascript after loading all html content -->
+
+    <!-- typewriting effect -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    
+    <!-- send to email -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+    <!-- script.js extension -->
+    <script src="./script/script.js"></script>
+</body>
+
+</html>
