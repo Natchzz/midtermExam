@@ -74,3 +74,33 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
+// try
+
+var btn = document.getElementById('btn');
+btn.addEventListener('click',function(e){
+    e.preventDefault()
+    // declaring variable 
+    var name = document.getElementById('name').value;
+    var email = document.getElementById('email').value;
+    var subject = document.getElementById('subject').value;
+    var message = document.getElementById('message').value;
+    var body = 'name: ' + name + '<br/> email: ' + email + '<br/> subject: ' + subject + '<br/> message: ' + message;
+
+
+    // clear the form fields
+    document.getElementById('name').value = '';
+    document.getElementById('email').value = '';
+    document.getElementById('subject').value = '';
+    document.getElementById('message').value = '';
+
+    Email.send({
+        SecureToken : "be38afea-77cd-4de1-a532-f9ef818829ca",
+        To : 'floydmark22@gmail.com',
+        From : "nikzcameron@gmail.com",
+        Subject : "contact message",
+        Body : body
+    }).then(
+      message => alert('Message sent succesfully!')
+    );
+})
+
