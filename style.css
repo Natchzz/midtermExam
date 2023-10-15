@@ -26,9 +26,9 @@
     
 .bgimage {
     height:100vh;
-    background-image: url(./images/homebackground.jpg);
-    background-size: cover;
-    /* background-color: black; */
+    /* background-image: url(./images/homebackground.jpg);
+    background-size: cover; */
+    background-color: rgba(0,0,0,1); 
     position:relative;
     padding: 0;
     margin: 0;
