@@ -6,6 +6,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+<!-- script -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
   <!-- bootstrap CDN -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
@@ -210,7 +213,7 @@
                         <img class="card-img-top" src="./images/landing-page.png" alt="Card image" style="width:100%">
                         <div class="card-body">
                             <h4 class="card-title">Fcb-Portfolio</h4>
-                            <p class="card-text">My simple portfolio created using html, css and bootstrap during zuit bootcamp.</p>
+                            <p class="card-text">My simple portfolio created using html, css and bootstrap during a bootcamp.</p>
                             <div class="text-center">
                                 <a href="https://natchzz.github.io/fcb-portfolio/" class="btn btn-primary" target="_blank">See project</a>
                             </div>
@@ -237,22 +240,14 @@
         <div class="row mt-12 align-items-center justify-content-center">
             <div class="col-lg-6">
                 <!-- form fields -->
-                <form class="form" action="https://formsubmit.co/floydmark22@email.com" method="post" onsubmit="emailSend(); reset(); return false;" >
+                <form class="form">
                     <label for="name" class="form-label ">Name:</label>
                     <div class="mb-4 input-group">
                         <span class="input-group-text">
                             <i class="fa fa-user"></i>
                         </span>
-                        <input type="text" class="form-control form-control-lg" placeholder="e.g Floyd" id="name" name="name" autocomplete="off" !required>
+                        <input type="text" class="form-control form-control-lg" placeholder="e.g Floyd" id="sendername" name="sendername" autocomplete="off" required>
                     </div>
-                    <label class="form-label" for="email">Email: </label>
-                    <div class="mb-4 input-group">
-                        <span class="input-group-text">
-                            <i class="fa fa-envelope"></i>
-                        </span>
-                        <input type="email" class="form-control " placeholder="e.g nikzcameron@gmail.com" id="email" name="email" autocomplete="off" required>
-                    </div>
-                
                     <label for="subject" class="form-label">Subject:</label>
                     <div class="mb-4 input-group">
                         <span class="input-group-text">
@@ -260,11 +255,18 @@
                         </span>
                         <input type="text" class="form-control " placeholder="subject"  id="subject" name="subject" autocomplete="off" required>
                     </div>
+                    <label class="form-label" for="email">Email: </label>
+                    <div class="mb-4 input-group">
+                        <span class="input-group-text">
+                            <i class="fa fa-envelope"></i>
+                        </span>
+                        <input type="email" class="form-control " placeholder="e.g nikzcameron@gmail.com" id="replyto" name="replyto" autocomplete="off" required>
+                    </div>
                     <div class="mb-3 mt-3">
                         <textarea class="form-control" rows="5" id="message"  name="message" placeholder="Message" autocomplete="off" required></textarea>
                     </div>
                     <div class="mb-4 text-center">
-                        <button type="button" class="btn btn-primary mt-3 text-center" id="btn">Send</button>
+                        <button type="button" class="btn btn-primary mt-3 text-center" id="btn" onclick="sendMail();">Send</button>
                     </div>
                 </form>
             </div>

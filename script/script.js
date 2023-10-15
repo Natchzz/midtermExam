@@ -1,7 +1,5 @@
 
-
 const header = document.querySelector(".navbar");
-
 
 // nav bar onscroll change background color
 window.onscroll = function(){
@@ -13,7 +11,6 @@ window.onscroll = function(){
         header.classList.remove('navbarDark');
     }
 }
-
 
 // auto typpe 
 var typed = new Typed(".auto-type", {
@@ -74,35 +71,40 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
+// sending email
+function sendMail() {
+    (function() {
+      emailjs.init("8HYbk0Us84mZLrPY0"); // Account Public Key
+    })();
 
-var btn = document.getElementById('btn');
-btn.addEventListener('click', function(e) {
-    e.preventDefault();
+    var sendername = document.querySelector("#sendername").value;
+    var replyto = document.querySelector("#replyto").value;
+    var subject = document.querySelector("#subject").value;
+    var message = document.querySelector("#message").value;
 
-    var name = document.getElementById('name').value;
-    var email = document.getElementById('email').value;
-    var subject = document.getElementById('subject').value;
-    var message = document.getElementById('message').value;
-    var body = 'name: ' + name + '<br/> email: ' + email + '<br/> subject: ' + subject + '<br/> message: ' + message;
-
-    if (name === '' || email === '' || subject === '' || message === '') {
-        alert('Please fill in all the fields before sending the message.');
-        return; // Exit the function and prevent sending the message.
+    // Check if any of the required fields are empty
+    if (sendername === '' || replyto === '' || subject === '' || message === '') {
+      alert('Please fill in all the required fields before sending the email.');
+      return; // Exit the function and prevent sending the email.
     }
 
     // Clear the form fields
-    document.getElementById('name').value = '';
-    document.getElementById('email').value = '';
+    document.getElementById('sendername').value = '';
+    document.getElementById('replyto').value = '';
     document.getElementById('subject').value = '';
     document.getElementById('message').value = '';
 
-    Email.send({
-        SecureToken: "be38afea-77cd-4de1-a532-f9ef818829ca",
-        To: 'floydmark22@gmail.com',
-        From: "nikzcameron@gmail.com",
-        Subject: "contact message",
-        Body: body
-    }).then(
-        message => alert('Message sent successfully!')
-    );
-});
+    var serviceID = "service_2q2heib"; // Email Service ID
+    var templateID = "template_8o5ejnj"; // Email Template ID
+
+    emailjs.send(serviceID, templateID, {
+      sendername: sendername,
+      replyto: replyto,
+      subject: subject,
+      message: message
+    })
+    .then(res => {
+      alert("Email sent successfully!!");
+    })
+    .catch();
+  }
