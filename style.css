@@ -1,4 +1,4 @@
-/* spacing on all sections */
+/* Resetting default margins, paddings, and box model */
 *{
     margin: 0;
     padding: 0;
@@ -6,56 +6,39 @@
     font-family: 'Poppins', sans-serif;
 }
 
-.floyd{
-    color: #362FD9;
-}
-
-
+/* Styling for the navigation bar when it's scrolled down */
 .navbarDark {
     background: #000;
 }
 
-.setion{
-    margin-top: 4rem;
-    padding-top: 4rem;
-    background-color: #808080;
+/* Styling for the .floyd class */
+.floyd{
+    color: #362FD9;
 }
 
+/* Styling for the "Learn More" text */
 .learnMore{
     color: #362FD9;
     font-weight: 500;
 }
 
-.section:last-of-type {
-    padding-bottom: 4rem;
-}
-    
+/* Styling for the background section */
 .background {
     height:100vh;
-    /* background-image: url(./images/homebackground.jpg);
-    background-size: cover; */
+    background-size: cover; 
     background-color: #192655;
     position:relative;
     padding: 0;
     margin: 0;
 }
-/* text css above hero image*/
+
+/* Text styles above the profile image */
 .title {
     padding-top: 10rem;
     font-size: 4.5rem;
 }
-.description {
-    font-size: 2rem;
-}
-.title_text {
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-}
 
+/* Styling for the about me image */
 .image_about {
     width: 100%;
     border-radius: 50%;
@@ -63,14 +46,18 @@
     box-shadow: 5px 10px 8px #888888;
 }
 
+/* Text alignment for the about me paragraph */
 .aboutMeParagraph{
     text-align: justify;
 }
 
- .social-icons {
+/* Styling for social media icons */
+.social-icons {
     font-size: 36px;
     cursor: pointer;
 }
+
+/* Hover effect for social media icons */
 .fa-facebook:hover,
 .fa-instagram:hover,
 .fa-twitter:hover,
@@ -80,57 +67,100 @@
     color: #fff;
 }
 
+/* Styling for 'fab' class */
 .fab {
     color: #000000;
 }
 
+/* Spacing for all sections */
+.setion{
+    margin-top: 4rem;
+    padding-top: 4rem;
+    background-color: #808080;
+}
+ 
+/* Spacing for the last section */
+.section:last-of-type {
+    padding-bottom: 4rem;
+}
+
+/* Styling for skills section */
 .skillsText.card {
     height: 280px;
     cursor: pointer;
-  }
+}
 
 .skillsIcons {
     font-size: 36px;
     text-align: center;
     width: 100%;
 }
+   
+/* Styling for the title within a card */
 .card-title {
     text-align: center;
 }
 
+/* Styling for the about me image */
+.description {
+    font-size: 2rem;
+}
+
+/* Text alignment for the card text */
 .card-text{
     text-align: justify;
 }
 
+/* Hover effect for skills icons */
 .card:hover .skillsIcons {
     color: #362FD9;
 }
+
+/* Hover effect for skills text */
 .skillsText:hover {
     border: 1px solid #362FD9;
 }
 
+
+/* Hover effect for skills text */
 .card-img-top{
     height: 300px;
 }
 
-
+/* Styling for the contact form */
 .form{
     background-color:lightgray;
     padding: 20px;
     border-radius: 10px;
 }
 
+
+/* Styling for cards with a hover effect */
 .card{
     cursor: pointer;
     transition: .3s all ease;
 }
 
+/* Hover effect for cards */
 .card:hover{
     background-color: lightgrey;
     transform: scale(1.01);
 }
 
+/* Styling for the footer section */
 .footer {
     background-color: #808080;
     text-align: center;
 }
+
+.title_text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+
+
