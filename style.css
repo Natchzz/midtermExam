@@ -16,12 +16,6 @@
     color: #362FD9;
 }
 
-/* Styling for the "Learn More" text */
-.learnMore{
-    color: #362FD9;
-    font-weight: 500;
-}
-
 /* Styling for the background section */
 .background {
     height:100vh;
@@ -49,6 +43,12 @@
 /* Text alignment for the about me paragraph */
 .aboutMeParagraph{
     text-align: justify;
+}
+
+/* Styling for the "Learn More" text */
+.learnMore{
+    color: #362FD9;
+    font-weight: 500;
 }
 
 /* Styling for social media icons */
