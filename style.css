@@ -9,6 +9,12 @@
 .floyd{
     color: #362FD9;
 }
+
+
+.navbarDark {
+    background: #000;
+}
+
 .setion{
     margin-top: 4rem;
     padding-top: 4rem;
@@ -24,7 +30,7 @@
     padding-bottom: 4rem;
 }
     
-.bgimage {
+.background {
     height:100vh;
     /* background-image: url(./images/homebackground.jpg);
     background-size: cover; */
@@ -57,10 +63,9 @@
     box-shadow: 5px 10px 8px #888888;
 }
 
-.navbarDark {
-    background: #000;
+.aboutMeParagraph{
+    text-align: justify;
 }
-
 
  .social-icons {
     font-size: 36px;
@@ -83,6 +88,7 @@
     height: 280px;
     cursor: pointer;
   }
+
 .skillsIcons {
     font-size: 36px;
     text-align: center;
@@ -91,18 +97,17 @@
 .card-title {
     text-align: center;
 }
+
+.card-text{
+    text-align: justify;
+}
+
 .card:hover .skillsIcons {
     color: #362FD9;
 }
 .skillsText:hover {
     border: 1px solid #362FD9;
 }
-
-.footer {
-    background-color: #808080;
-    text-align: center;
-}
-
 
 .card-img-top{
     height: 300px;
@@ -125,12 +130,7 @@
     transform: scale(1.01);
 }
 
-.aboutMeParagraph{
-    text-align: justify;
+.footer {
+    background-color: #808080;
+    text-align: center;
 }
-
-.card-text{
-    text-align: justify;
-}
-
-
