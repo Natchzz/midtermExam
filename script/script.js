@@ -1,7 +1,7 @@
 
 const header = document.querySelector(".navbar");
 
-// nav bar onscroll change background color
+// Change the navbar background on scroll
 window.onscroll = function(){
     var top = window.scrollY;
     if(top  >= 100){
@@ -12,7 +12,7 @@ window.onscroll = function(){
     }
 }
 
-// auto typpe 
+// Auto-type effect for the text
 var typed = new Typed(".auto-type", {
     strings: [
         ' computer engineering student.',
@@ -23,7 +23,7 @@ var typed = new Typed(".auto-type", {
 })
 
 
-// skills card directed to a anchor tag when clicked
+// Skills cards that redirect to specified URLs
 document.addEventListener('DOMContentLoaded', function() {
     // Create an array to store the information for each card
     var cards = [
@@ -58,20 +58,19 @@ document.addEventListener('DOMContentLoaded', function() {
     cards.forEach(function(cardInfo) {
         var card = document.getElementById(cardInfo.id);
         card.addEventListener('click', function(){
-            // Ask for confirmation before redirecting
+             // Ask for confirmation before redirecting
             var isConfirmed = confirm("Are you sure you want to visit the link?");
             
             if (isConfirmed) {
-                // Redirect to a specific URL when the user confirms
+                 // Redirect to a specific URL when the user confirms
                 window.open(cardInfo.url ,'_blank');
-                // window.location.href = cardInfo.url;
             }
         });
     });
 });
 
 
-// sending email
+// Sending email using EmailJS
 function sendMail() {
     (function() {
       emailjs.init("8HYbk0Us84mZLrPY0"); // Account Public Key
